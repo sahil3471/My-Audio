@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+    <soup.neumorphism.NeumorphCardView
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:elevation="12dp"
+            android:id="@+id/view2"
+            app:cardCornerRadius="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_centerHorizontal="true">
+            <ImageView
+                android:layout_height="35dp"
+                android:layout_width="match_parent"
+                android:id="@+id/icon_view"
+                android:src="@drawable/music_icon"
+                android:scaleType="centerCrop"/>
+        </androidx.cardview.widget.CardView>
+    <soup.neumorphism.NeumorphTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Song Name"
+        android:id="@+id/music_title_text"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:layout_marginTop="2dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="60dp"
+        android:padding="10dp"
+        android:fontFamily="@font/sabon_ce_bold_italic"
+        app:neumorph_shadowColorDark="@color/white"
+        />
+
+    </soup.neumorphism.NeumorphCardView>
+
+
+</RelativeLayout>
